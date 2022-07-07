@@ -15,11 +15,6 @@ public class EspaciosCero{
 				cero += frase.charAt(i);
 			}//if
 		}//for
-		System.out.println("\t****Le quite los espacios por ti****\n" + cero);
-	    	/*With method replace
-		txtOrigin = "James Gosling Created Java";
-		txtWithOutSpaces = txtOrigin.replace(" ","");
-		System.out.println("Texto original: \t" + txtOrigin + "\t\t Texto resultante:\t" + txtWithOutSpaces);*/
-		
+		System.out.println("\t****Le quite los espacios por ti****\n" + cero);		
 	}//main
 }//class
