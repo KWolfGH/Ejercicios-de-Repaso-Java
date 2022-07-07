@@ -1,33 +1,32 @@
+import java.util.Scanner;
+
 public class Palindromo{
 
 	public static void main(String[] args) {
-		
-		//String sPalabra = "anilina";
-		String sPalabra = "dabale arroz a la zorra el abad";
-		
-		// Si queremos saber si es palíndromo una frase
-		// deberemos de borrar los espacios
-		// sPalabra = sPalabra.replace(" ", "");
-		
-		int inc = 0;
-		int des = sPalabra.length()-1;
-		boolean bError = false;		
-		
-		while ((inc<des) && (!bError)){
-			
-			if (sPalabra.charAt(inc)==sPalabra.charAt(des)){				
-				inc++;
-				des--;
-			} else {
-				bError = true;
-			}		
-		}
-		
-		if (!bError)
-			System.out.println(sPalabra + " es un PALINDROMO");
-		else
-			System.out.println(sPalabra + " NO es un palindromo");
-		
-	}
+	
+		Scanner lee = new Scanner(System.in);		
 
-}
+		System.out.println("Dime un palindromo");
+		String frase = lee.nextLine();
+
+		int primero = 0;
+		int ultimo = frase.length()-1;
+		boolean diferente = false;		
+		
+		while ((primero<ultimo) && (!diferente)){
+			
+			if (frase.charAt(primero)==frase.charAt(ultimo)){				
+				primero++;
+				ultimo--;
+			}else {
+				diferente = true;
+			}//if-else	
+		}//while
+		
+		if (!diferente){
+			System.out.println(frase + " es un PALINDROMO");
+		}else{
+			System.out.println(frase + " NO es un palindromo");
+		}//if-else
+	}//main
+}//class
