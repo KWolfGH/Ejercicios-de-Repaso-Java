@@ -24,11 +24,11 @@ public class Joyas{
 
         if(joyas.length() > 0 && piedras.length() <= 50){
         	for(int i=0; i<piedras.length();i++){
-            	for(int j=0;j<joyas.length();j++){
-            		if( (piedras.charAt(i) != 'ñ') && (joyas.charAt(j) != 'ñ') && (piedras.charAt(i) == joyas.charAt(j)) ){
-                    		selec++;
-                	}//if
-            	}//for
+                for(int j=0;j<joyas.length();j++){
+            	    if( (piedras.charAt(i) != 'ñ') && (joyas.charAt(j) != 'ñ') && (piedras.charAt(i) == joyas.charAt(j)) ){
+                   		selec++;
+                    }//if
+                }//for
         	}//for
         }//if
         return selec;
